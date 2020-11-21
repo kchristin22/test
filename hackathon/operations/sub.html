@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Subtraction </title>
+
+            <script type="text/javascript">
+
+            var right = new Audio("right.mp3");
+            var wrong = new Audio("wrong.mp3");
+
+            function fn1(number){
+                var data1=number+1;
+                var data2=number+2;
+                var true1=document.getElementById("rd"+number);
+                var false1=document.getElementById("rd"+data1);
+                var false2=document.getElementById("rd"+data2);
+
+                if(true1.checked==true){
+                    right.play();
+                    alert("Your choice is correct :)");
+                }
+                else if(false1.checked==true){
+                    wrong.play();
+                    alert("Your choice is false :(");
+                }
+                else if(false2.checked==true){
+                    wrong.play();
+                    alert("Your choice is false :(");
+                }
+            }
+
+            var x;
+            var y;
+
+
+            function fn2(){
+                var a = Math.floor((Math.random() * (20-10+1) + 10));
+                document.write(a);
+                return a;
+            }
+
+            function fn3(){
+                var b = Math.floor((Math.random()* x) + 1 );
+                document.write(b);
+                return b;
+            }
+
+        </script>
+
+    </head>
+
+    <body style="background-color: #ff8566">
+        <p id="a"></p>
+        <p id="b"></p>
+        <br/><hr/>
+        <p><center><h2>Let's learn <i>subtraction</i>!<h2></center></p>
+        <hr/><br/>
+        <center><table border="5">
+            <tr>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qKxQ33KcRWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>
+        </table></center>
+
+        <br/>
+
+        <p><center><h3>Time to check what you learned.<h3></center></p>
+
+        <center><table width="350" border="5">
+            <tr>
+                <td>
+                    <center>
+                    <h4><script type="text/javascript">var x = fn2()</script> - <script type="text/javascript">var y = fn3()</script> =__</h4>
+
+                    <script type="text/javascript">document.write(x-y)</script>
+                    <input id="rd1" name="button1" type="radio"/></input>
+
+                    <script type="text/javascript">
+                        var c= Math.floor(Math.random() * ((x-y+4)-(x-y+1)+1)+(x-y+1));
+                        document.write(c)
+                    </script>
+                    <input id="rd2" name="button1" type="radio"/></input>
+
+                    <script type="text/javascript">
+
+                        var d = Math.floor((Math.random()*5)+1);
+                        if(c>d & (c-d)!=(x-y)){
+                            document.write(c-d)
+                        }
+                        else if(d>c & (d-c)!=(x-y)){
+                            document.write(d-c)
+                        }
+                        else if((c-d)==(x-y) || (d-c)==(x-y)){
+                            document.write(c+d)
+                        }
+                        else if(c==d){
+                            document.write(c+Math.floor(d/2)+1)
+                        }
+
+                    </script>
+                    <input id="rd3" name="button1" type="radio"/></input>
+
+                    <br/><br/>
+
+                    <button onclick="fn1(1)" id=btn1>Check</button>
+
+                    </center>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <center>
+                    <h4><script type="text/javascript">var x = fn2()</script> - <script type="text/javascript">var y = fn3()</script> =__</h4>
+
+                    <script type="text/javascript">
+                        var c = Math.floor(Math.random()*((x-y+4)-(x-y+1)+1)+(x-y+1));
+                        document.write(c)
+                    </script>
+                    <input id="rd5" name="button2" type="radio"/></input>
+
+                    <script type="text/javascript">document.write(x-y)</script>
+                    <input id="rd4" name="button2" type="radio"/></input>
+
+                    <script type="text/javascript">
+
+                        var d = Math.floor((Math.random()*5)+1);
+                        if(c>d & (c-d)!=(x-y)){
+                            document.write(c-d)
+                        }
+                        else if(d>c & (d-c)!=(x-y)){
+                            document.write(d-c)
+                        }
+                        else if((c-d)==(x-y) || (d-c)==(x-y)){
+                            document.write(c+d)
+                        }
+                        else if(c==d){
+                            document.write(c+1+Math.floor(d/2))
+                        }
+
+                    </script>
+                    <input id="rd6" name="button2" type="radio"/></input>
+
+                    <br/><br/>
+
+                    <button onclick="fn1(4)" id=btn2>Check</button>
+                    </center>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <center>
+                    <h4><script type="text/javascript">var x = fn2()</script> - <script type="text/javascript">var y = fn3()</script> =__</h4>
+
+                    <script type="text/javascript">document.write(x-y)</script>
+                    <input id="rd7" name="button3" type="radio"/></input>
+
+                    <script type="text/javascript">
+                        var c= Math.floor(Math.random() * ((x-y+4)-(x-y+1)+1)+(x-y+1));
+                        document.write(c)
+                    </script>
+                    <input id="rd8" name="button3" type="radio"/></input>
+
+                    <script type="text/javascript">
+
+                        var d = Math.floor((Math.random()*5)+1);
+                        if(c>d & (c-d)!=(x-y)){
+                            document.write(c-d)
+                        }
+                        else if(d>c & (d-c)!=(x-y)){
+                            document.write(d-c)
+                        }
+                        else if((c-d)==(x-y) || (d-c)==(x-y)){
+                            document.write(c+d)
+                        }
+                        else if(c==d){
+                            document.write(c+1+Math.floor(d/2))
+                        }
+
+                    </script>
+                    <input id="rd9" name="button3" type="radio"/></input>
+
+                    <br/><br/>
+
+                    <button onclick="fn1(7)" id=btn3>Check</button>
+                    </center>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <center>
+                    <h4><script type="text/javascript">var x = fn2()</script> - <script type="text/javascript">var y = fn3()</script> =__</h4>
+
+                    <script type="text/javascript">
+                        var c= Math.floor(Math.random() * ((x-y+4)-(x-y+1)+1)+(x-y+1));
+                        document.write(c)
+                    </script>
+                    <input id="rd10" name="button4" type="radio"/></input>
+
+                    <script type="text/javascript">
+
+                        var d = Math.floor((Math.random()*5)+1);
+                        if(c>d & (c-d)!=(x-y)){
+                            document.write(c-d)
+                        }
+                        else if(d>c & (d-c)!=(x-y)){
+                            document.write(d-c)
+                        }
+                        else if((c-d)==(x-y) || (d-c)==(x-y)){
+                            document.write(c+d)
+                        }
+                        else if(c==d){
+                            document.write(c+1+Math.floor(d/2))
+                        }
+
+                    </script>
+                    <input id="rd11" name="button4" type="radio"/></input>
+
+                    <script type="text/javascript">document.write(x-y)</script>
+                    <input id="rd12" name="button4" type="radio"/></input>
+
+                    <br/><br/>
+
+                    <button onclick="fn1(10)" id=btn4>Check</button>
+                    </center>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <center>
+                    <h4><script type="text/javascript">var x = fn2()</script> - <script type="text/javascript">var y = fn3()</script> =__</h4>
+
+                    <script type="text/javascript">
+                        var c= Math.floor(Math.random() * ((x-y+4)-(x-y+1)+1)+(x-y+1));
+                        document.write(c)
+                    </script>
+                    <input id="rd13" name="button5" type="radio"/></input>
+
+                    <script type="text/javascript">
+
+                        var d = Math.floor((Math.random()*5)+1);
+                        if(c>d & (c-d)!=(x-y)){
+                            document.write(c-d)
+                        }
+                        else if(d>c & (d-c)!=(x-y)){
+                            document.write(d-c)
+                        }
+                        else if((c-d)==(x-y) || (d-c)==(x-y)){
+                            document.write(c+d)
+                        }
+                        else if(c==d){
+                            document.write(c+1+Math.floor(d/2))
+                        }
+
+                    </script>
+                    <input id="rd14" name="button5" type="radio"/></input>
+
+                    <script type="text/javascript">document.write(x-y)</script>
+                    <input id="rd15" name="button5" type="radio"/></input>
+
+                    <br/><br/>
+
+                    <button onclick="fn1(13)" id=btn5>Check</button>
+
+                    </center>
+                </td>
+            </tr>
+        </table></center>
+
+        <br/>
+
+        <a href="../home.html">
+            <center><img width="100" src="home.png" alt="HOME"/></center>
+        </a>
+
+    </body>
+</html>

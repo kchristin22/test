@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CITY</title>
+
+            <script type="text/javascript">
+
+            function fn1(number){
+                var data1=number+1;
+                var data2=number+2;
+                var true1=document.getElementById("rd"+number);
+                var false1=document.getElementById("rd"+data1);
+                var false2=document.getElementById("rd"+data2);
+
+                if(true1.checked==true){
+                 	window.location.href="Q5.html"
+                }
+                else if(false1.checked==true)
+                    alert("Try again :(");
+                else if(false2.checked==true)
+                    alert("Try again :(");
+            }
+
+            var x;
+            var y;
+            var c;
+
+            function fn2(){
+                var a = Math.floor((Math.random() * 10) + 1);
+                return a;
+            }
+        
+        </script>
+
+
+</head>
+
+<body style="background-color: #3b0066;">
+
+	<center>
+		<table>
+			<tr>
+				<td><img width="200" src="house1.png" alt="blank"></td>
+				<td><img width="200" src="gray.png" alt="blank"></td>
+				<td><img width="200" src="house3.png" alt="blank"></td>
+                <td><img width="200" src="gray.png" alt="blank"></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<center>
+                <td><img width="200" src="house4.png" alt="gamw"></td>
+				<td><img width="200" src="gray.png" alt="gamw"></td>
+                <td><img width="180" src="house2.png" alt="blank"></td>
+                </center>
+			</tr>
+		</table>
+		<table border="5" style="color:white;">
+			<tr>
+				<td>
+                    <center>
+                    <script type="text/javascript">
+                        var y = fn2();
+                        var x = (Math.floor(Math.random()*10)+1)*y;
+                    </script>
+                    <h4><script type="text/javascript">document.write(x)</script> / <script type="text/javascript">document.write(y)</script> =__</h4>
+
+                    <script type="text/javascript">document.write(x/y)</script>
+                    <input id="rd1" name="button1" type="radio"/></input>
+
+                    <script type="text/javascript">                       
+                        var c = Math.floor(Math.random()*((x/y+4)-(x/y+1)+1)+(x/y+1));
+                        document.write(c)
+                    </script>
+                    <input id="rd2" name="button1" type="radio"/></input>
+
+                    <script type="text/javascript">
+                        var d = (Math.floor((Math.random()*10)+1))*c;
+                        if(x==y){
+                            document.write(x)
+                        }
+                        else if((d/c)==(x/y)){
+                            document.write((x/y)*2)
+                        }
+                        else{
+                            if((c+(d/c))==(x/y)){
+                                document.write(c+(d/c)-1)
+                            }
+                            else{
+                            document.write(c+(d/c))
+                            }
+                        }
+                    </script>
+                    <input id="rd3" name="button1" type="radio"/></input>
+
+                    <br/><br/>
+
+                    <button onclick="fn1(1)" id=btn>Check</button>
+
+                    </center>
+				</td>
+			</tr>
+		</table>
+	</center>
+
+
+</body>
+</html>
