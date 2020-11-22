@@ -15,10 +15,12 @@
                 if(true1.checked==true){
                  	window.location.href="Q2.html"
                 }
-                else if(false1.checked==true)
-                    alert("Try again :(");
-                else if(false2.checked==true)
-                    alert("Try again :(");
+                else if(false1.checked==true){                  
+                    window.location.href="Q1.html"
+                }
+                else if(false2.checked==true){
+                    window.location.href="Q1.html"
+                }
             }
 
             var x;
@@ -45,7 +47,9 @@
 <body style="background-color: #3b0066;">
 
 	<center>
+        <br/><br/>
 		<table>
+            <!--adds a house to the first spot of the table-->
 			<tr>
 				<td><img width="200" src="house1.png" alt="blank"></td>
 				<td><img width="200" src="gray.png" alt="blank"></td>
@@ -62,9 +66,11 @@
                 </center>
 			</tr>
 		</table>
-		<table border="5" style="color:white;">
+        <br/><br/>
+		<table width="200" border="5" style="color:white;">
 			<tr>
 				<td>
+                    <!--question 2: subtraction-->
                     <center>
                     <h4><script type="text/javascript">var x = fn2()</script> - <script type="text/javascript">var y = fn3()</script> =__</h4>
 

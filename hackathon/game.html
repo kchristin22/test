@@ -5,7 +5,9 @@
 
             <script type="text/javascript">
 
-
+            //checks if the answer is correct
+            //if it is it takes you to the next question
+            //if it is not it refreshes the page to give you a different question of  the same kind
 
             function fn1(number){
                 var data1=number+1;
@@ -17,35 +19,35 @@
                 if(true1.checked==true){
                  	window.location.href="Q/Q1.html"
                 }
-                else if(false1.checked==true){
-                  window.location.href="game.html"
-                  }
-                else if(false2.checked==true){
-                   window.location.href="game.html"
-                 }
+                else if(false1.checked==true)
+                    window.location.href="game.html"
+                else if(false2.checked==true)
+                    window.location.href="game.html"
             }
 
             var x;
             var y;
+            var c;
 
-
+            //returns random number between 1 and 20
             function fn2(){
                 var a = Math.floor((Math.random() * 20) + 1);
                 document.write(a);
                 return a;
             }
-
+        
         </script>
 
 
 </head>
 
 <body style="background-color: #3b0066;">
-
+    
+    <br/>
     <center><h1 style="color:white;">Choose the right answers to build your own city!</h1></center>
 
 	<center>
-		<table>
+		<table> <!--table with empty spots-->
 			<tr>
 				<td><img width="200" src="Q/gray.png" alt="blank"></td>
 				<td><img width="200" src="Q/gray.png" alt="blank"></td>
@@ -62,13 +64,15 @@
 				</center>
 			</tr>
 		</table>
-		<table border="5" style="color:white;">
+
+		<table width="200" border="5" style="color:white;">
 			<tr>
 				<td>
+                    <!--question 1: addition-->
                     <center>
                     <h4><script type="text/javascript">var x = fn2()</script> + <script type="text/javascript">var y = fn2()</script> =__</h4>
 
-                    <script type="text/javascript">
+                    <script type="text/javascript">                        
                         var c = Math.floor(Math.random()*((x+y+4)-(x+y+1)+1)+(x+y+1));
                         document.write(c)
                     </script>

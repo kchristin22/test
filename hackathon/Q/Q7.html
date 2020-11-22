@@ -16,9 +16,9 @@
                  	window.location.href="F.html"
                 }
                 else if(false1.checked==true)
-                    alert("Try again :(");
+                    window.location.href="Q7.html"
                 else if(false2.checked==true)
-                    alert("Try again :(");
+                    window.location.href="Q7.html"
             }
 
             var x;
@@ -38,6 +38,7 @@
 <body style="background-color: #3b0066;">
 
 	<center>
+        <br/>
         <table>
             <tr>
                 <td><img width="200" src="house1.png" alt="blank"></td>
@@ -55,9 +56,11 @@
                 </center>
             </tr>
         </table>
-		<table border="5" style="color:white;">
+
+		<table width="200" border="5" style="color:white;">
 			<tr>
 				<td>
+                    <!--quesstion 8: division-->
                     <center>
                     <script type="text/javascript">
                         var y = fn2();
@@ -65,14 +68,14 @@
                     </script>
                     <h4><script type="text/javascript">document.write(x)</script> / <script type="text/javascript">document.write(y)</script> =__</h4>
 
-                    <script type="text/javascript">document.write(x/y)</script>
-                    <input id="rd1" name="button1" type="radio"/></input>
-
                     <script type="text/javascript">                       
                         var c = Math.floor(Math.random()*((x/y+4)-(x/y+1)+1)+(x/y+1));
                         document.write(c)
                     </script>
                     <input id="rd2" name="button1" type="radio"/></input>
+
+                    <script type="text/javascript">document.write(x/y)</script>
+                    <input id="rd1" name="button1" type="radio"/></input>
 
                     <script type="text/javascript">
                         var d = (Math.floor((Math.random()*10)+1))*c;

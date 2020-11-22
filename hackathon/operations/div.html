@@ -33,6 +33,7 @@
             var y;
             var c;
 
+            //returns a random number between 1 and 10
             function fn2(){
                 var a = Math.floor((Math.random() * 10) + 1);
                 return a;
@@ -61,24 +62,33 @@
         <center><table width="350" border="5">
             <tr>
                 <td>
+                    <!--question 1-->
                     <center>
-
                     <script type="text/javascript">
+                        //random number between 1 and 10 for the divisor
                         var y = fn2();
+                        //random number between 1 and 10 multiplied by the divisor for the divident
+                        //to make sure the answer is an integer
                         var x = (Math.floor(Math.random()*10)+1)*y;
                     </script>
                     <h4><script type="text/javascript">document.write(x)</script> / <script type="text/javascript">document.write(y)</script> =__</h4>
 
-                    <script type="text/javascript">document.write(x/y)</script>
+                    <script type="text/javascript">
+                        //prints the correct answer
+                        document.write(x/y)
+                    </script>
                     <input id="rd1" name="button1" type="radio"/></input>
 
-                    <script type="text/javascript">                       
+                    <script type="text/javascript">
+                        //random number close to the correct answer                   
                         var c = Math.floor(Math.random()*((x/y+4)-(x/y+1)+1)+(x/y+1));
                         document.write(c)
                     </script>
                     <input id="rd2" name="button1" type="radio"/></input>
 
                     <script type="text/javascript">
+                        //random number similar to the correct answer
+                        //checks it is not the same number as the other answers
                         var d = (Math.floor((Math.random()*10)+1))*c;
                         if(x==y){
                             document.write(x)
@@ -107,6 +117,7 @@
 
             <tr>
                 <td>
+                    <!--question 2-->
                     <center>
                     <script type="text/javascript">
                         var y = fn2();
@@ -151,6 +162,7 @@
 
             <tr>
                 <td>
+                    <!--question 3-->
                     <center>
                     <script type="text/javascript">
                         var y = fn2();
@@ -195,6 +207,7 @@
 
             <tr>
                 <td>
+                    <!--question 4-->
                     <center>
                     <script type="text/javascript">
                         var y = fn2();
@@ -239,6 +252,7 @@
 
             <tr>
                 <td>
+                    <!--question 5-->
                     <center>
                     <script type="text/javascript">
                         var y = fn2();

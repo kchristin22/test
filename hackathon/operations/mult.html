@@ -62,15 +62,21 @@
         <center><table width="350" border="5">
             <tr>
                 <td>
+                    <!--question 1-->
                     <center>
                     <h4><script type="text/javascript">var x = fn2()</script> x <script type="text/javascript">var y = fn2()</script> =__</h4>
 
-                    <script type="text/javascript">var c = Math.floor(Math.random() * ((x*y+4)-(x*y+1)+1)+(x*y+1));
-                      document.write(c)
+                    <script type="text/javascript">
+                        //random number close to the correct answer
+                        var c = Math.floor(Math.random() * ((x*y+4)-(x*y+1)+1)+(x*y+1));
+                        document.write(c)
                     </script>
                     <input id="rd2" name="button1" type="radio"/></input>
 
-                    <script type="text/javascript"> var d = Math.floor((Math.random()*5)+1);
+                    <script type="text/javascript"> 
+                        //random number close to the correct answer
+                        //checks it is not the same number as the other answers
+                        var d = Math.floor((Math.random()*5)+1);
                         if(c>d & (c-d)!=(x*y)){
                             document.write(c-d)
                         }
@@ -86,7 +92,10 @@
                     </script>
                     <input id="rd3" name="button1" type="radio"/></input>
 
-                    <script type="text/javascript">document.write(x*y)</script>
+                    <script type="text/javascript">
+                        //prints the correct answer
+                        document.write(x*y)
+                    </script>
                     <input id="rd1" name="button1" type="radio"/></input>
                     <br/><br/>
 
@@ -98,6 +107,7 @@
 
             <tr>
                 <td>
+                    <!--question 2-->
                     <center>
                     <h4><script type="text/javascript">var x = fn2()</script> x <script type="text/javascript">var y = fn2()</script> =__</h4>
 
@@ -133,6 +143,7 @@
 
             <tr>
                 <td>
+                    <!--question 3-->
                     <center>
                     <h4><script type="text/javascript">var x = fn2()</script> x <script type="text/javascript">var y = fn2()</script> =__</h4>
 
@@ -167,6 +178,7 @@
 
             <tr>
                 <td>
+                    <!--question 4-->
                     <center>
                     <h4><script type="text/javascript">var x = fn2()</script> x <script type="text/javascript">var y = fn2()</script> =__</h4>
 
@@ -201,6 +213,7 @@
 
             <tr>
                 <td>
+                    <!--question 5-->
                     <center>
                     <h4><script type="text/javascript">var x = fn2()</script> x <script type="text/javascript">var y = fn2()</script> =__</h4> <!--92-->
 
