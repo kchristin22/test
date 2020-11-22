@@ -5,6 +5,8 @@
 
             <script type="text/javascript">
 
+
+
             function fn1(number){
                 var data1=number+1;
                 var data2=number+2;
@@ -15,22 +17,24 @@
                 if(true1.checked==true){
                  	window.location.href="Q/Q1.html"
                 }
-                else if(false1.checked==true)
-                    window.location.href="game.html"
-                else if(false2.checked==true)
-                    window.location.href="game.html"
+                else if(false1.checked==true){
+                  window.location.href="game.html"
+                  }
+                else if(false2.checked==true){
+                   window.location.href="game.html"
+                 }
             }
 
             var x;
             var y;
-            var c;
+
 
             function fn2(){
                 var a = Math.floor((Math.random() * 20) + 1);
                 document.write(a);
                 return a;
             }
-        
+
         </script>
 
 
@@ -64,7 +68,7 @@
                     <center>
                     <h4><script type="text/javascript">var x = fn2()</script> + <script type="text/javascript">var y = fn2()</script> =__</h4>
 
-                    <script type="text/javascript">                        
+                    <script type="text/javascript">
                         var c = Math.floor(Math.random()*((x+y+4)-(x+y+1)+1)+(x+y+1));
                         document.write(c)
                     </script>
